@@ -1,0 +1,85 @@
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Primary Button */
+.primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.primary:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Secondary Button */
+.secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.secondary:hover:not(:disabled) {
+  background-color: #545b62;
+}
+
+/* Danger Button */
+.danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.danger:hover:not(:disabled) {
+  background-color: #c82333;
+}
+
+/* Success Button */
+.success {
+  background-color: #28a745;
+  color: white;
+}
+
+.success:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+/* Outline Button */
+.outline {
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+.outline:hover:not(:disabled) {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .button {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
